@@ -1,0 +1,42 @@
+#banner {
+    display: grid;
+    grid-template-columns: repeat(2 auto);
+    grid-template-rows: repeat(2 auto);
+    width: auto;
+    height: 25vh;
+    border-color: black;
+    border-style: solid;
+    grid-template-areas: "image title";
+    background-color: #FBC326;
+}
+
+header img {
+    grid-area: image;
+    width: 175px;
+    height: 150px;
+}
+
+#title {
+    grid-area: title;
+    font-size: 20px;
+    color: #1D7D9E;
+}
+
+.flexcontainer {
+    display: flex;
+}
+
+.header_navigation {
+    display: flex;
+    gap: 100px;
+    border: solid black;
+    font-size: 25px;
+    font-weight: 900;
+    margin-left: 100px;
+    color: #1D7D9E;
+    text-align: center;
+}
+
+#catshop {
+    text-align: center;
+}
