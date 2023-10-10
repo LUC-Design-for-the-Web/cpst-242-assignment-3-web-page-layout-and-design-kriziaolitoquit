@@ -1,42 +1,55 @@
+/*
+- How did you decide on your site’s color scheme? 
+      Answer: This site will not be too bright or too dark. I want my site to be as clean and pleasing to the eyes. 
+      I will be using summer shades such as yellow, green, blue and gray. The site will have the feeling of accessibility to potential customers
+      as well as a sense of happiness when buying something for their furry friends.
+- Provide me with the color palette you will use within your site and provide the hexadecimals values for each color.
+      Answer: #FBC326, #1D7D9E
+- What areas of your site will be impacted by your color choice? 
+      Answer: Background color for the header will have yellow color, fonts will be on the shade of blue. 
+- What font(s) will you use for the ```<body>```(default declarations), ```<p>``` and ```<h1> - <h6>```
+      Answer: Verdana. It gives width and space which makes the web content clear and readable.
+- What are the different weights and sizes of the heading and paragraph tags?
+      Answer: Header would have the largest size in the document. Navigation bar would have a bold weight for distinction.
+- What is your desired line-height, word-spacing, and letter-spacing?
+      Answer: line-height: 15-20px; word-spacing: 1px; letter-spacing: normal
+
+*/
+
+/*Verdana. It gives width and space which makes the web content clear and readable.  */
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
 #banner {
-    display: grid;
-    grid-template-columns: repeat(2 auto);
-    grid-template-rows: repeat(2 auto);
-    width: auto;
-    height: 25vh;
-    border-color: black;
-    border-style: solid;
-    grid-template-areas: "image title";
-    background-color: #FBC326;
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: 25vh;
+  border-color: black;
+  border-style: solid;
+  background-color: #FBC326;
 }
 
 header img {
-    grid-area: image;
-    width: 175px;
-    height: 150px;
+  width: 175px;
+  height: 150px;
 }
 
-#title {
-    grid-area: title;
-    font-size: 20px;
-    color: #1D7D9E;
+h1 {
+  justify-content: center;
+  font-size: 50px;
+  color: #1D7D9E;
 }
 
-.flexcontainer {
+.head_container {
     display: flex;
-}
-
-.header_navigation {
-    display: flex;
-    gap: 100px;
-    border: solid black;
-    font-size: 25px;
-    font-weight: 900;
-    margin-left: 100px;
-    color: #1D7D9E;
-    text-align: center;
-}
-
-#catshop {
-    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 138rem;
+    min-width: 75rem;
+    width: 100%;
 }
