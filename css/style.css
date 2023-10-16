@@ -121,3 +121,25 @@ li:hover {
       text-align:left;
       font-size: 1em;
 }
+
+@media screen and (max-width: 768px) {
+      #navbar {
+            float: none;
+            width: 100%
+        }
+      
+      aside {
+           width: 50%;
+      }
+      
+    }
+
+@media screen and (min-width: 1024px) {
+      aside {
+            width: 100%;
+        }
+
+        #flexcontainer {
+            background-size: auto;
+        }
+   }
